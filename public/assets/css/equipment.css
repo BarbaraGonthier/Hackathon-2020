@@ -1,0 +1,11 @@
+.btn {
+    background-color: var(--secondary-color);
+}
+
+a {
+    font-family: var(--title-font-family);
+}
+
+.image-size{
+    height : 350px;
+}
