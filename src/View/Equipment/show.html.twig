@@ -1,0 +1,37 @@
+{% extends 'layout.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/equipment.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2 text-center">
+                <img class="pb-5" style="width:250px;" src="/assets/images/home-category.png" alt="Home victory logo">
+            </div>
+        </div>
+        <div class="row">
+            {% for equipment in equipments %}
+                <div class="col-md-4 col-12">
+                    <div class="card text-dark equipement-card">
+                        <div class="equipment-image text-center">
+                        <img src="/uploads/equipment/{{ equipment.image }}"
+                             alt="image de {{ equipment.name }}">
+                        </div>
+                        <div class="card-body">
+                            <div title="{{ equipment.name }}">
+                                <p class="text-dark">{{ equipment.name }}
+                                </p>
+                                <p class="text-dark">Price : {{ equipment.price }} Golgen Coins</p>
+                                <p class="text-dark">Description : {{ equipment.description }} </p>
+                            </div>
+                        </div>
+                        <a class="btn btn-dark" href="/Order/sendOrder/{{ equipment.id }}">
+                            Commander
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

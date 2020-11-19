@@ -9,3 +9,11 @@ a {
 .image-size{
     height : 350px;
 }
+
+equipment-image {
+    height : 300px;
+}
+
+.equipement-card {
+    height : 500px;
+}
