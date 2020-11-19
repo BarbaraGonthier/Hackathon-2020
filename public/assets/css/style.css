@@ -62,7 +62,9 @@ nav a {
     bottom: 0;
     width: 100%;
 }
-
+.nav- {
+    color: var(--primary-color);
+}
 .table .thead-dark th {
     background-color: var(--dark);
 }

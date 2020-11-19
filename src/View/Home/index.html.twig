@@ -1,40 +1,64 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <section class="acceuil  d-flex flex-column justify-content-around align-items-start py-5">
-            <h1 class=" text-acceuil text-center ml-md-5">Welcome in Hell Spartan !</h1>
-    </section>
-    <section>
-        <h2 class="text-center my-5">Training good for you !</h2>
-        <div class ="d-flex flex-wrap justify-content-around">
-            <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
-                <img src="assets/images/leg.png" class="card-img-top img-card m-3 " alt="logo-leg">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Legs</h5>
-                    <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
+    <section class="section">
+        <section class="acceuil  d-flex flex-column justify-content-around align-items-start py-5">
+                <h1 class=" text-acceuil text-center ml-md-5">Welcome in Hell Spartan !</h1>
+        </section>
+        <section class="training">
+            <h2 class="h2-gold text-center py-5">Training good for you !</h2>
+            <div class ="d-flex flex-wrap justify-content-around">
+                <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
+                    <img src="assets/images/leg.png" class="card-img-top img-card m-3 " alt="logo-leg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Legs</h5>
+                        <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
+                    </div>
+                </div>
+                <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
+                    <img src="assets/images/abdominal.png" class="card-img-top img-card m-3" alt="abdominal-logo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Abdominal</h5>
+                        <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
+                    </div>
+                </div>
+                <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
+                    <img src="assets/images/biceps.png" class="card-img-top img-card m-3" alt="biceps-logo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Biceps</h5>
+                        <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
+                    </div>
                 </div>
             </div>
-            <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
-                <img src="assets/images/abdominal.png" class="card-img-top img-card m-3" alt="abdominal-logo">
-                <div class="card-body">
-                    <h5 class="card-title">Abdominal</h5>
-                    <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
+        </section>
+        <section>
+            <h2 class="text-center m-5">Popular Exercices</h2>
+            <div class ="d-flex flex-wrap justify-content-around">
+                <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
+                    <img src="assets/images/dips.png" class="card-img-top img-card m-3 " alt="logo-dips">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dips</h5>
+                        <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
+                    </div>
+                </div>
+                <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
+                    <img src="assets/images/Walking-lunges-2.png" class="card-img-top img-card m-3" alt="walking-lunges-logo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Walking Lunges</h5>
+                        <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
+                    </div>
+                </div>
+                <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
+                    <img src="assets/images/Leg-raises-1.png" class="card-img-top img-card m-3" alt="leg-raise-logo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Leg Raise</h5>
+                        <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
+                    </div>
                 </div>
             </div>
-            <div class="card card-muscle d-flex flex-column align-items-center justify-content-center m-3" style="width: 18rem;">
-                <img src="assets/images/biceps.png" class="card-img-top img-card m-3" alt="biceps-logo">
-                <div class="card-body">
-                    <h5 class="card-title">Biceps</h5>
-                    <a href="#" class="btn btn-primary mt-3">Go to exercise</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2 class="text-center m-5">Popular Exercices</h2>
-
-    </section>
-    <section>
-        <h2 class="text-center m-5">Spartan of the mounth ! </h2>
+        </section>
+        <section>
+            <h2 class="text-center m-5">Spartan of the mounth ! </h2>
+        </section>
     </section>
 {% endblock %}

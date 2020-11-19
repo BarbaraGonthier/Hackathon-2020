@@ -1,5 +1,8 @@
+.section{
+    background: fixed center/cover url("../images/spartan2.jpg");
+}
+
 .acceuil{
-    background: center/cover url("../images/spartan2.jpg");
     height: 51vw;
 }
 @media screen and (max-width: 766px){
@@ -16,15 +19,27 @@
 }
 
 .img-card{
-    width: 80%;
-
+    max-width: 280px;
+    width: auto;
+    height: 300px;
 }
-
+.card-body{
+    width: 100%;
+}
 .card-muscle .btn {
-    background-color: var(--primary-color);
-    border: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--secondary-color);
 }
 
 .card-muscle .btn:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--dark);
+}
+
+.training{
+    background-color: var(--primary-color);
+}
+
+.h2-gold{
+    color: var(--secondary-color);
 }
