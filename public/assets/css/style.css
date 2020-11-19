@@ -1,8 +1,12 @@
+@import 'home.css';
+
 :root {
     --dark: rgb(16, 8, 3);
     --light: rgb(250, 248, 248);
     --primary-color : #7f0000;
     --secondary-color : #d5b248;
+    --secondary-color-op1: rgba(213,178,72,0.4);
+    --secondary-color-op2: rgba(213,178,72,0.25);
 
     --title-font-family: 'Titillium Web', sans-serif;
     --font-family: 'Roboto', sans-serif;
@@ -14,7 +18,7 @@
     --spacing-2:calc(var(--spacing) * 2);
     --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
-    --nav-bar-height : 140px;
+    --nav-bar-height : 90px;
 }
 
 * {
@@ -24,7 +28,6 @@
 body {
     font-family: var(--font-family);
     margin: 0;
-    padding-top: var(--nav-bar-height);
 }
 
 h1 {
@@ -40,7 +43,7 @@ h2 {
 }
 
 
-nav, footer{
+footer{
     background-color: var(--primary-color);
 }
 .logo{
@@ -50,11 +53,33 @@ nav, footer{
 }
 nav a {
     font-family: var(--title-font-family);
+    color : var(--light);
 }
 
-footer {
-    position: absolute;
+a:hover {
+    color : var(--light);
+}
+
+.footer {
+    position: static;
     bottom: 0;
     width: 100%;
+}
+
+.table .thead-dark th {
+    background-color: var(--dark);
+}
+
+.table tbody tr:nth-of-type(2n+1) {
+    background-color: var(--secondary-color-op2);
+}
+
+.table tbody tr:nth-of-type(2n) {
+    background-color: var(--secondary-color-op1);
+}
+
+td .btn-info{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
