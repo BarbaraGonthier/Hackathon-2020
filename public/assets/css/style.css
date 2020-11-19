@@ -14,6 +14,7 @@
     --spacing-2:calc(var(--spacing) * 2);
     --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
+    --nav-bar-height : 140px;
 }
 
 * {
@@ -23,7 +24,7 @@
 body {
     font-family: var(--font-family);
     margin: 0;
-
+    padding-top: var(--nav-bar-height);
 }
 
 h1 {
@@ -36,4 +37,12 @@ h2 {
     font-size:  var(--title-2-font-size);
     color : var(--primary-color);
     font-family : var(--title-font-family)
+}
+
+nav {
+    background-color: var(--dark);
+}
+
+nav a {
+    font-family: var(--font-family);
 }
