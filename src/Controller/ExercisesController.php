@@ -24,6 +24,16 @@ class ExercisesController extends AbstractController
         15 => '15.png',
     ];
 
+    public $categoryImages = [
+        10 => 'abs.png',
+        8 => 'arm.png',
+        12 => 'back.png',
+        14 => 'calves.png',
+        11 => 'chest.png',
+        9 => 'leg.png',
+        13 => 'shoulder.png',
+    ];
+
     /**
      * Display home page
      *
@@ -46,7 +56,8 @@ class ExercisesController extends AbstractController
         $exercisesManager = new ExercisesManager();
         $categories = $exercisesManager->getCategories();
         return $this->twig->render('Exercises/categories.html.twig', [
-            'categories' => $categories
+            'categories' => $categories,
+            'images' => $this->categoryImages
         ]);
     }
 
