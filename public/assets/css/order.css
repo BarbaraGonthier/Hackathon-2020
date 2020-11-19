@@ -1,0 +1,19 @@
+nav a {
+    color : var(--dark);
+}
+
+nav a:hover {
+    color : var(--dark);
+}
+
+.btn {
+    background-color: var(--secondary-color);
+}
+
+a {
+    font-family: var(--title-font-family);
+}
+
+body {
+    background: url("../images/bg-img-equipments.png") no-repeat fixed center;
+}
