@@ -10,3 +10,21 @@
 .acceuil h1{
     color: var(--primary-color)
 }
+
+.card-muscle{
+    color: var(--primary-color);
+}
+
+.img-card{
+    width: 80%;
+
+}
+
+.card-muscle .btn {
+    background-color: var(--primary-color);
+    border: var(--primary-color);
+}
+
+.card-muscle .btn:hover{
+    background-color: var(--secondary-color);
+}
