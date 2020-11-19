@@ -5,6 +5,8 @@
     --light: rgb(250, 248, 248);
     --primary-color : #7f0000;
     --secondary-color : #d5b248;
+    --secondary-color-op1: rgba(213,178,72,0.4);
+    --secondary-color-op2: rgba(213,178,72,0.25);
 
     --title-font-family: 'Titillium Web', sans-serif;
     --font-family: 'Roboto', sans-serif;
@@ -17,6 +19,7 @@
     --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
     --nav-bar-height : 94px;
+
 }
 
 * {
@@ -60,3 +63,19 @@ nav a {
     width: 100%;
 }
 
+.table .thead-dark th {
+    background-color: var(--dark);
+}
+
+.table tbody tr:nth-of-type(2n+1) {
+    background-color: var(--secondary-color-op2);
+}
+
+.table tbody tr:nth-of-type(2n) {
+    background-color: var(--secondary-color-op1);
+}
+
+td .btn-info{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
