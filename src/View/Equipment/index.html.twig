@@ -1,0 +1,33 @@
+{% extends 'layout.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/equipment.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-8 offset-2 text-center">
+                <img class="pb-5" style="width:250px;" src="/assets/images/home-category.png" alt="Home victory logo">
+            </div>
+        </div>
+        <div class="row">
+            {% for category in categories %}
+                <div class="col-md-4 col-12">
+                    <div class="card">
+                        <div class="image-size">
+                        <img src="/uploads/category/{{ category.image }}" class="card-img-top" alt="image de {{ category.name }}">
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <a class="btn" href="/equipment/show/{{ category.id }}" title="Category {{ category.name }}">
+                                    {{ category.name }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+

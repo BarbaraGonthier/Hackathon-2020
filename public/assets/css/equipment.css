@@ -1,0 +1,19 @@
+.btn {
+    background-color: var(--secondary-color);
+}
+
+a {
+    font-family: var(--title-font-family);
+}
+
+.image-size{
+    height : 350px;
+}
+
+equipment-image {
+    height : 300px;
+}
+
+.equipement-card {
+    height : 500px;
+}
