@@ -4,7 +4,7 @@
     --primary-color : #7f0000;
     --secondary-color : #d5b248;
 
-    --title-font-family: 'Fugaz One', cursive;
+    --title-font-family: 'Titillium Web', sans-serif;
     --font-family: 'Roboto', sans-serif;
 
     --title-font-size: 4rem;
@@ -39,16 +39,22 @@ h2 {
     font-family : var(--title-font-family)
 }
 
-nav {
+
+nav, footer{
     background-color: var(--primary-color);
 }
-
-nav a {
-    font-family: var(--font-family);
-}
-
 .logo{
     background-color: var(--dark);
     background-blend-mode: multiply;
     border-radius: 50%;
 }
+nav a {
+    font-family: var(--title-font-family);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
