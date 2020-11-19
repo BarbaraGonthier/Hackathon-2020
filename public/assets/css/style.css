@@ -40,9 +40,15 @@ h2 {
 }
 
 nav {
-    background-color: var(--dark);
+    background-color: var(--primary-color);
 }
 
 nav a {
     font-family: var(--font-family);
+}
+
+.logo{
+    background-color: var(--dark);
+    background-blend-mode: multiply;
+    border-radius: 50%;
 }
