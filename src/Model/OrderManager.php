@@ -4,7 +4,7 @@ namespace App\Model;
 
 class OrderManager extends AbstractManager
 {
-    public const TABLE = '`order`';
+    public const TABLE = 'order';
     public const IN_PROGRESS = 'In progress';
     public const VALIDATED = 'Validated';
     public const REFUSED = 'Refused';
@@ -18,8 +18,8 @@ class OrderManager extends AbstractManager
     }
     public function saveOrder(array $order, $equipment)
     {
-        $query = "INSERT INTO " . self::TABLE .
-            " (`user_name`, `user_serial_number`, `message`, `equipment_id`, `date`, `status`) 
+        $query = "INSERT INTO `" . self::TABLE .
+            "` (`user_name`, `user_serial_number`, `message`, `equipment_id`, `date`, `status`) 
             VALUES 
             (:user_name, :user_serial_number, :message,
             :equipment_id, :date, '" . self::IN_PROGRESS . "')";

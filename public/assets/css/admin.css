@@ -1,0 +1,25 @@
+nav a {
+    color : var(--dark);
+}
+
+nav a:hover {
+    color : var(--dark);
+}
+
+body {
+    background: url("../images/bg-img-equipments.png") no-repeat fixed center;
+}
+
+.btn-accept {
+    background-color: var(--secondary-color);
+    color : var(--dark);
+}
+
+.btn-refuse {
+    background-color: var(--primary-color);
+    color : var(--dark);
+}
+
+div {
+    color : var(--dark);
+}
