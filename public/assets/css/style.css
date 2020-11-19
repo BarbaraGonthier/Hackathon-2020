@@ -1,3 +1,5 @@
+@import 'home.css';
+
 :root {
     --dark: rgb(16, 8, 3);
     --light: rgb(250, 248, 248);
@@ -14,7 +16,7 @@
     --spacing-2:calc(var(--spacing) * 2);
     --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
-    --nav-bar-height : 140px;
+    --nav-bar-height : 70px;
 }
 
 * {
@@ -52,7 +54,7 @@ nav a {
     font-family: var(--title-font-family);
 }
 
-footer {
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
