@@ -28,7 +28,6 @@
 body {
     font-family: var(--font-family);
     margin: 0;
-    padding-top: var(--nav-bar-height);
 }
 
 h1 {
@@ -44,7 +43,7 @@ h2 {
 }
 
 
-nav, footer{
+footer{
     background-color: var(--primary-color);
 }
 .logo{
@@ -54,6 +53,11 @@ nav, footer{
 }
 nav a {
     font-family: var(--title-font-family);
+    color : var(--light);
+}
+
+a:hover {
+    color : var(--light);
 }
 
 .footer {
@@ -78,3 +82,4 @@ nav a {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
 }
+

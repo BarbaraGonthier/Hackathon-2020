@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container mt-5 pt-5 mb-5 pb-5">
         <div class="row">
             <div class="col-8 offset-2 text-center">
                 <img class="pb-5" style="width:250px;" src="/assets/images/home-category.png" alt="Home victory logo">
@@ -19,7 +19,7 @@
                         </div>
                         <div class="card-body">
                             <div class="text-center">
-                                <a class="btn" href="/equipment/show/{{ category.id }}" title="Category {{ category.name }}">
+                                <a class="btn font-weight-bold" href="/equipment/show/{{ category.id }}" title="Category {{ category.name }}">
                                     {{ category.name }}
                                 </a>
                             </div>
