@@ -1,0 +1,39 @@
+:root {
+    --dark: rgb(16, 8, 3);
+    --light: rgb(250, 248, 248);
+    --primary-color : #7f0000;
+    --secondary-color : #d5b248;
+
+    --title-font-family: 'Fugaz One', cursive;
+    --font-family: 'Roboto', sans-serif;
+
+    --title-font-size: 4rem;
+    --title-2-font-size: 2.5rem;
+
+    --spacing: 8px;
+    --spacing-2:calc(var(--spacing) * 2);
+    --spacing-4:calc(var(--spacing) * 4);
+    --spacing-6:calc(var(--spacing) * 6);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+
+}
+
+h1 {
+    font-size:  var(--title-font-size);
+    color : var(--primary-color);
+    font-family : var(--title-font-family)
+}
+
+h2 {
+    font-size:  var(--title-2-font-size);
+    color : var(--primary-color);
+    font-family : var(--title-font-family)
+}
