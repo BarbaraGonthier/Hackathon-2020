@@ -74,7 +74,7 @@ nav a {
     background-color: var(--secondary-color-op1);
 }
 
-.btn-info{
+td .btn-info{
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
 }
