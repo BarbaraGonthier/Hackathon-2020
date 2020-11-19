@@ -2,7 +2,11 @@
     background: center/cover url("../images/spartan2.jpg");
     height: 51vw;
 }
-
+@media screen and (max-width: 766px){
+   .acceuil{
+       background :none;
+   }
+}
 .acceuil h1{
     color: var(--primary-color)
 }
