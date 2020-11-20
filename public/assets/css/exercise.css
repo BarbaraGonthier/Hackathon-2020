@@ -29,14 +29,9 @@ section {
     margin: var(--spacing-4) 0;
 }
 
-.exercise-container > div {
-    margin: var(--spacing-4) 0;
-}
-
 .exercise-illustration, .exercise-category-illustration {
     max-height: 250px;
     max-width: 160px;
-    margin: var(--spacing-2) var(--spacing-4);
 }
 
 .exercise-image {
@@ -68,15 +63,8 @@ body {
     background: url("../images/background-exercices.png") no-repeat fixed center/cover;
 }
 
-.btn {
-    border-radius: 3px;
-    padding: var(--spacing) var(--spacing-2);
-    margin: var(--spacing-4);
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    color: var(--light);
-}
-
-.btn:hover {
-    color: var(--secondary-color);
+.btn-dark {
+    background-color: var(--secondary-color);
+    color : var(--dark);
+    border :0;
 }
