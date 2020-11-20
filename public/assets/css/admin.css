@@ -7,7 +7,7 @@ nav a:hover {
 }
 
 body {
-    background: url("../images/bg-img-equipments.png") no-repeat fixed/cover;
+    background: url("../images/bg-img-equipments.png") no-repeat fixed;
 }
 
 .btn-accept {
