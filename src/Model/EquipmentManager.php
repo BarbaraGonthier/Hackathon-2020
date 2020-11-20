@@ -52,6 +52,19 @@ class EquipmentManager extends AbstractManager
         return $statement->fetch();
     }
 
+    public function isOrdered(int $id)
+    {
+        $statement = $this->pdo->prepare(
+            "SELECT e.id FROM " . self::TABLE . " e" .
+            " JOIN `" . OrderManager::TABLE . "` o ON e.id = o.equipment_id" .
+            " WHERE e.id = :id"
+        );
+        $statement->bindValue('id', $id, \PDO::PARAM_INT);
+        $statement->execute();
+
+        return $statement->rowCount() > 0;
+    }
+
     public function insert(array $equipment)
     {
         $statement = $this->pdo->prepare("INSERT INTO " . self::TABLE . " (`name` , `image` ,
@@ -67,5 +80,12 @@ class EquipmentManager extends AbstractManager
         if ($statement->execute()) {
             return (int)$this->pdo->lastInsertId();
         }
+    }
+
+    public function delete(int $id)
+    {
+        $statement = $this->pdo->prepare("DELETE FROM " . self::TABLE . " WHERE id=:id");
+        $statement->bindValue('id', $id, \PDO::PARAM_INT);
+        $statement->execute();
     }
 }

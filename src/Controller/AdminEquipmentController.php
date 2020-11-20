@@ -108,7 +108,7 @@ class AdminEquipmentController extends AbstractController
         $equipments = $equipmentManager->selectAll();
 
         return $this->twig->render('Admin/equipmentList.html.twig', [
-            'equipments' => $equipments,
+            'equipments' => $equipments
         ]);
     }
 
@@ -116,7 +116,18 @@ class AdminEquipmentController extends AbstractController
     {
         $equipmentManager = new EquipmentManager();
         $equipment = $equipmentManager->selectOneById($id);
+        $isOrdered = $equipmentManager->isOrdered($id);
 
-        return $this->twig->render('Admin/equipmentDetail.html.twig', ['equipment' => $equipment]);
+        return $this->twig->render('Admin/equipmentDetail.html.twig', [
+            'equipment' => $equipment,
+            'isOrdered' => $isOrdered
+        ]);
+    }
+
+    public function delete(int $id)
+    {
+        $equipmentManager = new EquipmentManager();
+        $equipmentManager->delete($id);
+        header('Location:/adminEquipment/index');
     }
 }
