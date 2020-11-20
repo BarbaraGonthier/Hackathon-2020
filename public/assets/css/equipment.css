@@ -2,14 +2,6 @@
     background-color: var(--secondary-color);
 }
 
-nav a {
-    color : var(--dark);
-}
-
-nav a:hover {
-    color : var(--dark);
-}
-
 a {
     font-family: var(--title-font-family);
 }
