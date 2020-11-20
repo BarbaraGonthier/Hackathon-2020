@@ -9,9 +9,9 @@ class ExercisesManager
     public function getAll()
     {
         $client = HttpClient::create();
-        $response = $client->request('GET', 'https://wger.de/api/v2/exercise/?language=2');
+        $response = $client->request('GET', 'https://wger.de/api/v2/exercise/?language=2&limit=200');
 
-        return $response->toArray();
+        return$response->toArray();
     }
 
     public function getCategories()
@@ -25,7 +25,8 @@ class ExercisesManager
     public function getCategoryById(int $id)
     {
         $client = HttpClient::create();
-        $response = $client->request('GET', 'https://wger.de/api/v2/exercise/?language=2&category=' . $id);
+        $response = $client->request('GET', 'https://wger.de/api/v2/exercise/?language=2&limit=200' .
+            '&category=' . $id);
 
         return $response->toArray();
     }
@@ -41,7 +42,8 @@ class ExercisesManager
     public function getMuscleById(int $id)
     {
         $client = HttpClient::create();
-        $response = $client->request('GET', 'https://wger.de/api/v2/exercise/?language=2&muscles=' . $id);
+        $response = $client->request('GET', 'https://wger.de/api/v2/exercise/?language=2&limit=200' .
+            '&muscles=' . $id);
 
         return $response->toArray();
     }

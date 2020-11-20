@@ -22,21 +22,36 @@ a:hover {
 
 .muscle-category-illustration {
     height: 150px;
+    padding: var(--spacing) 0;
 }
 
 section {
-    margin-bottom: var(--spacing-2);
+    margin: var(--spacing-4) 0;
 }
 
 .exercise-container > div {
     margin: var(--spacing-4) 0;
 }
 
-.exercise-illustration {
-    height: 250px;
-    margin: 0 var(--spacing-2);
+.exercise-illustration, .exercise-category-illustration {
+    max-height: 250px;
+    max-width: 160px;
+    margin: var(--spacing-2) var(--spacing-4);
 }
 
-.category-image, .exercise-image {
-    width: 80px;
+.exercise-image {
+    width: 70px;
+}
+
+.category-image {
+    height: 50px;
+}
+
+.exercises-list, .categories-list, .muscles-list {
+    border: solid 1px var(--dark);
+    border-radius: 2px;
+}
+
+.card-body {
+    padding-left: var(--spacing-4);
 }
