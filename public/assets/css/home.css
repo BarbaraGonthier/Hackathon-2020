@@ -4,9 +4,11 @@
 
 .acceuil{
     height: 58vw;
-    background: fixed center/cover url("../images/spartan2.jpg");
 }
-
+.text-acceuil{
+    margin-bottom: 220px;
+    margin-left: 50px;
+}
 @media screen and (max-width: 766px){
    .section{
        background :none;
