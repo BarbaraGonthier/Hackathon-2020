@@ -30,7 +30,7 @@ class OrderController extends AbstractController
                 $order['date'] = $presentTime->format('Ymd');
                 $orderManager = new OrderManager();
                 $orderManager->saveOrder($order, $equipment);
-                header('Location:/');
+                header('Location:/Order/thanks');
             }
         }
 
