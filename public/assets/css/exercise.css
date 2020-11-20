@@ -66,5 +66,6 @@ body {
 .btn-dark {
     background-color: var(--secondary-color);
     color : var(--dark);
+    font-family: var(--title-font-family);
     border :0;
 }

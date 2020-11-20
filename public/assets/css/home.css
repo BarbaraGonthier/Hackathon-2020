@@ -46,19 +46,20 @@
 }
 
 .description{
-    background-color: var(--primary-color);
+    background: url("../images/backgroudacceuil.png");
 
 }
 .text-dexcription{
     max-width: 1000px;
     font-size: 32px;
-    color: var(--secondary-color);
+    color: var(--light);
+    font-family: var(--font-family-main);
 }
 .h2-gold{
     color: var(--secondary-color);
 }
 .exercice{
-    background-color: var(--dark);
+    background: url("../images/backgroudacceuil.png");
 }
 
 .card-img-top {
