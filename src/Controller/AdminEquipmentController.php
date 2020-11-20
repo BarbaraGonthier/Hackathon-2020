@@ -15,4 +15,12 @@ class AdminEquipmentController extends AbstractController
             'equipments' => $equipments,
         ]);
     }
+
+    public function show(int $id)
+    {
+        $equipmentManager = new EquipmentManager();
+        $equipment = $equipmentManager->selectOneById($id);
+
+        return $this->twig->render('Admin/equipmentDetail.html.twig', ['equipment' => $equipment]);
+    }
 }
