@@ -86,3 +86,7 @@ td .btn-info{
     border-color: var(--secondary-color);
 }
 
+.dropdown-menu {
+    background-color: transparent;
+}
+
