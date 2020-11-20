@@ -27,5 +27,5 @@ equipment-image {
 }
 
 body {
-    background: url("../images/bg-img-equipments.png") no-repeat fixed center;
+    background: url("../images/bg-img-equipments.png") no-repeat fixed center/cover;
 }

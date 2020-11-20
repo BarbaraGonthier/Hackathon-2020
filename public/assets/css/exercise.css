@@ -65,6 +65,6 @@ nav a:hover {
 }
 
 body {
-    background: url("../images/background-exercices.png") no-repeat fixed center;
+    background: url("../images/background-exercices.png") no-repeat fixed center/cover;
 }
 
