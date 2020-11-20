@@ -19,8 +19,12 @@
                 <div class="mt-2"><strong>Stock :</strong> {{ equipment.stock }}</div>
                 <div class="mt-2"><strong>Description :</strong> {{ equipment.description }}</div>
                 <div class="mt-3">
-                    <a href="/adminEquipment/edit/{{ equipment.id }}" title="edit" class="btn btn-accept mr-2">Edit</a>
-                    <a href="/adminEquipment/delete/{{ equipment.id }}" title="delete" class="btn btn-refuse mr-2">Delete</a>
+                    <a href="/adminEquipment/edit/{{ equipment.id }}" title="Edit" class="btn btn-accept mr-2">Edit</a>
+                    {% if isOrdered %}
+                    <button class="btn btn-refuse mr-2" title="Equipment ordered" disabled>Delete</button>
+                    {% else %}
+                    <a href="/adminEquipment/delete/{{ equipment.id }}" title="Delete" class="btn btn-refuse mr-2">Delete</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
