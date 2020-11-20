@@ -20,6 +20,11 @@
                 <h3>Description:</h3>
                 <p>{{ exercise.description|raw }}</p>
             </div>
+            {% if exercise.exerciseimage_set is not empty %}
+                {% for image in exercise.exerciseimage_set %}
+                    <img src="{{ image.image }}" alt="exercise illustration" class="exercise-illustration">
+                {% endfor %}
+            {% endif %}
             {% if exercise.muscles is not empty %}
                 <div>
                     <h3>Muscles:</h3>
@@ -34,11 +39,6 @@
                         {% endfor %}
                     </div>
                 </div>
-            {% endif %}
-            {% if exercise.exerciseimage_set is not empty %}
-                {% for image in exercise.exerciseimage_set %}
-                    <img src="{{ image.image }}" alt="exercise illustration" class="exercise-illustration">
-                {% endfor %}
             {% endif %}
         </div>
     </section>
