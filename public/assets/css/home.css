@@ -16,6 +16,15 @@
     .navbar{
         background-color: var(--primary-color);
     }
+
+    .text-acceuil{
+        display: block;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .acceuil{
+        margin-top: 150px;
+    }
 }
 .acceuil h1{
     color: var(--primary-color)
