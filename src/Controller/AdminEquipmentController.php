@@ -7,6 +7,33 @@ use App\Model\EquipmentManager;
 
 class AdminEquipmentController extends AbstractController
 {
+    public function edit(int $id)
+    {
+        $categoryManager = new CategoryManager();
+        $categories = $categoryManager->selectAll();
+        $equipmentManager = new EquipmentManager();
+        $equipment = $equipmentManager->selectOneById($id);
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $equipment = array_map('trim', $_POST);
+            $errors = $this->equipmentValidate($equipment);
+            if (empty($errors)) {
+                if (!empty($_FILES['image']['name'])) {
+                    $fileExtension = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+                    $newFileName = uniqid() . '.' . $fileExtension;
+                    $uploadDir = 'uploads/equipment/';
+                    move_uploaded_file($_FILES['image']['tmp_name'], $uploadDir . $newFileName);
+                    $equipment['image'] = $newFileName;
+                }
+                $equipmentManager->update($equipment);
+                header('Location:/AdminEquipment/index');
+            }
+        }
+        return $this->twig->render('Admin/equipmentEdit.html.twig', ['equipment' => $equipment,
+            'categories' => $categories,
+            'errors' => $errors ?? [],
+        ]);
+    }
     public function add()
     {
         $categoryManager = new CategoryManager();
