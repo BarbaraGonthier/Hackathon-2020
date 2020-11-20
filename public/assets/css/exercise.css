@@ -34,7 +34,8 @@ section {
 }
 
 .exercise-illustration, .exercise-category-illustration {
-    height: 250px;
+    max-height: 250px;
+    max-width: 160px;
     margin: var(--spacing-2) var(--spacing-4);
 }
 
