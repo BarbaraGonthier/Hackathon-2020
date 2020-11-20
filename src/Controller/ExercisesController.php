@@ -104,6 +104,7 @@ class ExercisesController extends AbstractController
     {
         $exercisesManager = new ExercisesManager();
         $exercise = $exercisesManager->getExerciseById($id);
+        $_SESSION['done'] = [];
         if (key_exists($id, $_SESSION['done'])) {
             unset($_SESSION['done'][$id]);
         } else {
@@ -115,7 +116,7 @@ class ExercisesController extends AbstractController
     public function myExercises()
     {
         return $this->twig->render('Exercises/done.html.twig', [
-            'exercises' => $_SESSION['done']
+            'exercises' => $_SESSION['done'] ?? []
         ]);
     }
 }
