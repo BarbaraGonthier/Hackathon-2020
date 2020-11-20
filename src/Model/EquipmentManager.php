@@ -23,6 +23,21 @@ class EquipmentManager extends AbstractManager
 
         return $statement->fetchAll();
     }
+
+    public function selectOneById(int $id)
+    {
+        $statement = $this->pdo->prepare(
+            "SELECT e.*, c.name as category, e.id as id" .
+            " FROM " . self::TABLE . " e" .
+            " JOIN " . CategoryManager::TABLE . " c ON e.category_id = c.id" .
+            " WHERE e.id = :id"
+        );
+        $statement->bindValue('id', $id, \PDO::PARAM_INT);
+        $statement->execute();
+
+        return $statement->fetch();
+    }
+
     public function insert(array $equipment)
     {
         $statement = $this->pdo->prepare("INSERT INTO " . self::TABLE . " (`name` , `image` ,

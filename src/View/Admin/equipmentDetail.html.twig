@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/admin.css">
+{% endblock %}
+
+{% block title %} {{ parent() }} - Admin{% endblock %}
+
+{% block content %}
+    <main class="container mt-5 pt-5 mb-5 pb-5">
+        <h1 class="my-5 text-center">{{ equipment.name }}</h1>
+        <div class="row align-items-center">
+            <div class="col-md-3 offset-2">
+                <img src="/uploads/equipment/{{ equipment.image }}" alt="{{ equipment.name }}"
+                 title="{{ equipment.name }}" style="width: 200px;">
+            </div>
+            <div class="col-md-4">
+                <div><strong>Category :</strong> {{ equipment.category }}</div>
+                <div class="mt-2"><strong>Price :</strong> {{ equipment.price }} Golden Coins</div>
+                <div class="mt-2"><strong>Stock :</strong> {{ equipment.stock }}</div>
+                <div class="mt-2"><strong>Description :</strong> {{ equipment.description }}</div>
+                <div class="mt-3">
+                    <a href="/adminEquipment/edit/{{ equipment.id }}" title="edit" class="btn btn-accept mr-2">Edit</a>
+                    <a href="/adminEquipment/delete/{{ equipment.id }}" title="delete" class="btn btn-refuse mr-2">Delete</a>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
