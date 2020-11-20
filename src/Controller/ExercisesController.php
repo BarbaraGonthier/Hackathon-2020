@@ -7,21 +7,21 @@ use App\Model\ExercisesManager;
 class ExercisesController extends AbstractController
 {
     public $images = [
-        1 => '1.png',
-        2 => '2.png',
-        3 => '3.png',
-        4 => '4.png',
-        5 => '5.png',
-        6 => '6.png',
-        7 => '7.png',
-        8 => '8.png',
-        9 => '9.png',
-        10 => '10.png',
-        11 => '11.png',
-        12 => '12.png',
-        13 => '13.png',
-        14 => '14.png',
-        15 => '15.png',
+        1 => '1.jpg',
+        2 => '2.jpg',
+        3 => '3.jpg',
+        4 => '4.jpg',
+        5 => '5.jpg',
+        6 => '6.jpg',
+        7 => '7.jpg',
+        8 => '8.jpg',
+        9 => '9.jpg',
+        10 => '10.jpg',
+        11 => '11.jpg',
+        12 => '12.jpg',
+        13 => '13.jpg',
+        14 => '14.jpg',
+        15 => '15.jpg',
     ];
 
     public $categoryImages = [
