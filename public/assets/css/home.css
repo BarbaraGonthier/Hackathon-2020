@@ -1,13 +1,60 @@
-.acceuil{
+.section{
     background: fixed center/cover url("../images/spartan2.jpg");
-    height: 51vw;
 }
 
+.acceuil{
+    height: 58vw;
+}
+.text-acceuil{
+    margin-bottom: 220px;
+    margin-left: 50px;
+}
 @media screen and (max-width: 766px){
-   .acceuil{
+   .section{
        background :none;
    }
+    .navbar{
+        background-color: var(--primary-color);
+    }
 }
 .acceuil h1{
     color: var(--primary-color)
+}
+
+.card-muscle{
+    color: var(--primary-color);
+}
+
+.img-card{
+    max-width: 280px;
+    width: auto;
+    height: 300px;
+}
+.card-body{
+    width: 100%;
+}
+.card-muscle .btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--secondary-color);
+}
+
+.card-muscle .btn:hover{
+    background-color: var(--dark);
+}
+
+.description{
+    background-color: var(--primary-color);
+
+}
+.text-dexcription{
+    max-width: 820px;
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+.h2-gold{
+    color: var(--secondary-color);
+}
+.exercice{
+    background-color: var(--primary-color);
 }

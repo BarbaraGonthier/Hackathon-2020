@@ -11,7 +11,7 @@ class ExercisesManager
         $client = HttpClient::create();
         $response = $client->request('GET', 'https://wger.de/api/v2/exercise/?language=2&limit=200');
 
-        return $response->toArray();
+        return$response->toArray();
     }
 
     public function getCategories()

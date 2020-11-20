@@ -18,7 +18,8 @@
     --spacing-2:calc(var(--spacing) * 2);
     --spacing-4:calc(var(--spacing) * 4);
     --spacing-6:calc(var(--spacing) * 6);
-    --nav-bar-height : 90px;
+    --nav-bar-height : 94px;
+
 }
 
 * {
@@ -51,11 +52,6 @@ footer{
     background-blend-mode: multiply;
     border-radius: 50%;
 }
-nav a {
-    font-family: var(--title-font-family);
-    color : var(--light);
-}
-
 a:hover {
     color : var(--light);
 }
@@ -63,10 +59,12 @@ a:hover {
 .footer {
     bottom: 0;
     width: 100%;
+    position: fixed;
 }
 
-.footer {
-    position: fixed;
+.navbar-brand, .nav-link{
+    color: var(--primary-color);
+    font-family: var(--title-font-family);
 }
 
 .table .thead-dark th {
