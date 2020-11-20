@@ -1,0 +1,45 @@
+{% extends 'layout.html.twig' %}
+{% block title %}{{ parent() }} | Exercises | {{ exercise.name }}{% endblock %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/exercise.css">
+{% endblock %}
+
+{% block content %}
+    <header class="d-flex text-center justify-content-around align-items-center exercise">
+        <h1 class="exercise-h1">Exercise description</h1>
+    </header>
+    <section>
+        <div class="container exercise-container">
+            <h2>{{ exercise.name }}</h2>
+            <div>
+                <h3>Category:</h3>
+                <p>{{ exercise.category.name }}</p>
+            </div>
+            <div>
+                <h3>Description:</h3>
+                <p>{{ exercise.description|raw }}</p>
+            </div>
+            {% if exercise.muscles is not empty %}
+                <div>
+                    <h3>Muscles:</h3>
+                    <div class="row mx-0 d-flex">
+                        {% for muscle in exercise.muscles %}
+                            <div class="muscle-illustration d-flex flex-column justify-content-between align-items-center">
+                                <img src="/assets/images/muscles/{{ illustrations[muscle.id] }}"
+                                     alt="muscle illustration"
+                                     class="illustration exercise-category-illustration">
+                                <p>{{ muscle.name }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+            {% if exercise.exerciseimage_set is not empty %}
+                {% for image in exercise.exerciseimage_set %}
+                    <img src="{{ image.image }}" alt="exercise illustration" class="exercise-illustration">
+                {% endfor %}
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

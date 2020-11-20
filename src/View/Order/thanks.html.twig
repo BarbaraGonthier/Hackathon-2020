@@ -1,0 +1,25 @@
+{% extends 'layout.html.twig' %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="/assets/css/order.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5 pt-5 mb-5 pb-5">
+        <div class="row">
+            <div class="col-8 offset-2 text-center">
+                <img class="pb-5" style="width:250px;" src="/assets/images/home-category.png" alt="Home victory logo">
+            </div>
+        </div>
+        <div class="jumbotron text-center">
+            <h1>Message Sent</h1>
+            <p class="lead">
+                Your request has duly been sent, your Commandant will get back to you shortly
+            </p>
+            <hr>
+            <p class="lead">
+                <a href='/home/index/' class="btn btn-secondary btn-lg" role="button">Go back to Home page</a>
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

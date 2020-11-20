@@ -1,0 +1,42 @@
+h1 {
+    margin-bottom: var(--spacing-4);
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: calc(var(--title-2-font-size)/2);
+    color: var(--dark);
+    text-align: left;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.illustration {
+    height: 290px;
+}
+
+.muscle-category-illustration {
+    height: 150px;
+}
+
+section {
+    margin-bottom: var(--spacing-2);
+}
+
+.exercise-container > div {
+    margin: var(--spacing-4) 0;
+}
+
+.exercise-illustration {
+    height: 250px;
+    margin: 0 var(--spacing-2);
+}
+
+.category-image, .exercise-image {
+    width: 80px;
+}
