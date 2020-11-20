@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\CategoryManager;
 use App\Model\EquipmentManager;
 
 class EquipmentController extends AbstractController
