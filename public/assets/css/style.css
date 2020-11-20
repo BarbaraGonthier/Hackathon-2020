@@ -52,6 +52,12 @@ footer{
     background-blend-mode: multiply;
     border-radius: 50%;
 }
+
+nav a {
+    font-family: var(--title-font-family);
+    color : var(--light);
+}
+
 a:hover {
     color : var(--light);
 }
@@ -60,11 +66,6 @@ a:hover {
     bottom: 0;
     width: 100%;
     position: fixed;
-}
-
-.navbar-brand, .nav-link{
-    color: var(--primary-color);
-    font-family: var(--title-font-family);
 }
 
 .table .thead-dark th {
