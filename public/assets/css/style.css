@@ -90,3 +90,15 @@ td .btn-info{
     background-color: transparent;
 }
 
+.dropdown-item {
+    color: var(--light);
+}
+
+.dropdown-item:hover {
+    color: var(--dark);
+}
+
+.dropdown-item:active {
+    background-color: var(--light);
+}
+
