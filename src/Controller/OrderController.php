@@ -8,6 +8,10 @@ use DateTime;
 
 class OrderController extends AbstractController
 {
+    public function thanks()
+    {
+        return $this->twig->render('Order/thanks.html.twig');
+    }
     public function sendOrder(int $id)
     {
         $order = [];
@@ -26,7 +30,7 @@ class OrderController extends AbstractController
                 $order['date'] = $presentTime->format('Ymd');
                 $orderManager = new OrderManager();
                 $orderManager->saveOrder($order, $equipment);
-                header('Location:/');
+                header('Location:/Order/thanks');
             }
         }
 

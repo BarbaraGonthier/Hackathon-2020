@@ -61,9 +61,12 @@ a:hover {
 }
 
 .footer {
-    position: static;
     bottom: 0;
     width: 100%;
+}
+
+.footer {
+    position: fixed;
 }
 
 .table .thead-dark th {
