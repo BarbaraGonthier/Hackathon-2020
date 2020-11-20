@@ -3,12 +3,16 @@
 }
 
 .acceuil{
-    height: 51vw;
+    height: 58vw;
 }
+
 @media screen and (max-width: 766px){
-   .acceuil{
+   .section{
        background :none;
    }
+    .navbar{
+        background-color: var(--primary-color);
+    }
 }
 .acceuil h1{
     color: var(--primary-color)
@@ -36,10 +40,18 @@
     background-color: var(--dark);
 }
 
-.training{
+.description{
     background-color: var(--primary-color);
-}
 
+}
+.text-dexcription{
+    max-width: 820px;
+    font-size: 32px;
+    color: var(--secondary-color);
+}
 .h2-gold{
     color: var(--secondary-color);
+}
+.exercice{
+    background-color: var(--primary-color);
 }

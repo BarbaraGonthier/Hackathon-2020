@@ -2,6 +2,14 @@
     background-color: var(--secondary-color);
 }
 
+nav a {
+    color : var(--dark);
+}
+
+nav a:hover {
+    color : var(--dark);
+}
+
 a {
     font-family: var(--title-font-family);
 }
@@ -16,4 +24,8 @@ equipment-image {
 
 .equipement-card {
     height : 500px;
+}
+
+body {
+    background: url("../images/bg-img-equipments.png") no-repeat fixed center;
 }
