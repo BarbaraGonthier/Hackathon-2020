@@ -1,9 +1,9 @@
 nav a {
-    color : var(--dark);
+    color : var(--light);
 }
 
 nav a:hover {
-    color : var(--dark);
+    color : var(--light);
 }
 
 .btn {
@@ -27,4 +27,9 @@ label, .lead{
 
 .jumbotron {
     background-color : unset;
+}
+
+.btn-red {
+    background-color: var(--primary-color);
+    color : var(--light)
 }
