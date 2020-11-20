@@ -95,7 +95,27 @@ class ExercisesController extends AbstractController
         $exercise = $exercisesManager->getExerciseById($id);
         return $this->twig->render('Exercises/show.html.twig', [
             'exercise' => $exercise,
-            'illustrations' => $this->images
+            'illustrations' => $this->images,
+            'done' => $_SESSION['done'] ?? []
+        ]);
+    }
+
+    public function done(int $id)
+    {
+        $exercisesManager = new ExercisesManager();
+        $exercise = $exercisesManager->getExerciseById($id);
+        if (key_exists($id, $_SESSION['done'])) {
+            unset($_SESSION['done'][$id]);
+        } else {
+            $_SESSION['done'][$id] = $exercise;
+        }
+        header('Location: /exercises/exercise/' . $id);
+    }
+
+    public function myExercises()
+    {
+        return $this->twig->render('Exercises/done.html.twig', [
+            'exercises' => $_SESSION['done']
         ]);
     }
 }
