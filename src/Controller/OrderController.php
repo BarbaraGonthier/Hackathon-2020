@@ -8,6 +8,10 @@ use DateTime;
 
 class OrderController extends AbstractController
 {
+    public function thanks()
+    {
+        return $this->twig->render('Order/thanks.html.twig');
+    }
     public function sendOrder(int $id)
     {
         $order = [];

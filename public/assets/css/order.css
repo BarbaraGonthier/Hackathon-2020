@@ -8,6 +8,8 @@ nav a:hover {
 
 .btn {
     background-color: var(--secondary-color);
+    font-family: var(--title-font-family);
+    border : 0;
 }
 
 a {
@@ -16,4 +18,13 @@ a {
 
 body {
     background: url("../images/bg-img-equipments.png") no-repeat fixed center;
+}
+
+label, .lead{
+    color : var(--dark);
+    font-family: var(--title-font-family);
+}
+
+.jumbotron {
+    background-color : unset;
 }
