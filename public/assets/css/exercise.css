@@ -56,6 +56,18 @@ section {
     padding-left: var(--spacing-4);
 }
 
+nav a {
+    color : var(--dark);
+}
+
+nav a:hover {
+    color : var(--dark);
+}
+
+body {
+    background: url("../images/background-exercices.png") no-repeat fixed center/cover;
+}
+
 .btn {
     border-radius: 3px;
     padding: var(--spacing) var(--spacing-2);

@@ -7,7 +7,7 @@ nav a:hover {
 }
 
 body {
-    background: url("../images/bg-img-equipments.png") no-repeat fixed center;
+    background: url("../images/bg-img-equipments.png") no-repeat fixed/cover;
 }
 
 .btn-accept {
@@ -24,6 +24,8 @@ div {
     color : var(--dark);
 }
 
-footer {
-
+.btn-dark {
+    background-color: var(--secondary-color);
+    color : var(--dark);
+    border :0;
 }
