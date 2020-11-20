@@ -13,7 +13,21 @@ class EquipmentManager extends AbstractManager
     {
         parent::__construct(self::TABLE);
     }
+    public function update(array $equipment): bool
+    {
+        $statement = $this->pdo->prepare("UPDATE " . self::TABLE . " SET name=:name, image=:image,
+         category_id=:category_id, description=:description, price=:price, stock=:stock WHERE id=:id");
+        $statement->bindValue('id', $equipment['id'], \PDO::PARAM_INT);
+        $statement->bindValue('name', $equipment['name'], \PDO::PARAM_STR);
+        $statement->bindValue('image', $equipment['image'], \PDO::PARAM_STR);
+        $statement->bindValue('category_id', $equipment['category_id'], \PDO::PARAM_INT);
+        $statement->bindValue('description', $equipment['description'], \PDO::PARAM_STR);
+        $statement->bindValue('price', $equipment['price'], \PDO::PARAM_INT);
+        $statement->bindValue('stock', $equipment['stock'], \PDO::PARAM_INT);
 
+
+        return $statement->execute();
+    }
     public function selectAllByCategory(int $categoryId)
     {
         $statement = $this->pdo->prepare("SELECT e.*, c.name AS category_name FROM " . self::TABLE .
