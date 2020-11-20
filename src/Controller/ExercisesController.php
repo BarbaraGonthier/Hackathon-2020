@@ -104,7 +104,9 @@ class ExercisesController extends AbstractController
     {
         $exercisesManager = new ExercisesManager();
         $exercise = $exercisesManager->getExerciseById($id);
-        $_SESSION['done'] = [];
+        if (!isset($_SESSION['done'])) {
+            $_SESSION['done'] = [];
+        }
         if (key_exists($id, $_SESSION['done'])) {
             unset($_SESSION['done'][$id]);
         } else {
