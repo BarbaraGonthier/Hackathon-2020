@@ -25,18 +25,10 @@
     color: var(--primary-color);
 }
 
-.img-card{
-    max-width: 280px;
-    width: auto;
-    height: 300px;
-}
-.card-body{
-    width: 100%;
-}
 .card-muscle .btn {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border: var(--secondary-color);
+    color: var(--light);
+    border: 0;
 }
 
 .card-muscle .btn:hover{
@@ -56,5 +48,9 @@
     color: var(--secondary-color);
 }
 .exercice{
-    background-color: var(--primary-color);
+    background-color: var(--dark);
+}
+
+.card-img-top {
+    width: 100px;
 }
