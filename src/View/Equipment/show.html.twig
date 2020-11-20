@@ -20,15 +20,18 @@
                         </div>
                         <div class="card-body">
                             <div title="{{ equipment.name }}">
-                                <p class="text-dark">{{ equipment.name }}
+                                <p class="text-dark"><strong>{{ equipment.name }}</strong>
                                 </p>
                                 <p class="text-dark">Price : {{ equipment.price }} Golden Coins</p>
                                 <p class="text-dark">Description : {{ equipment.description }} </p>
                             </div>
                         </div>
-                        <a class="btn font-weight-bold" href="/Order/sendOrder/{{ equipment.id }}">
-                            I need this equipment
-                        </a>
+                        <div class="text-center mb-3">
+                            <a class="btn font-weight-bold" href="/Order/sendOrder/{{ equipment.id }}">
+                                I need this equipment
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             {% endfor %}
