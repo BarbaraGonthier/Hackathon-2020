@@ -40,8 +40,8 @@
                     </div>
                 </div>
             {% endif %}
-            <div class="exercise-done d-flex justify-content-end">
-                <a href="/exercises/done/{{ exercise.id }}" class="btn">
+            <div class="exercise-done">
+                <a href="/exercises/done/{{ exercise.id }}" class="btn btn-dark mb-4">
                     {% if done[exercise.id] is defined %}
                         Exercise undone
                     {% else %}
