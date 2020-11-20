@@ -10,6 +10,7 @@
 
     --title-font-family: 'Titillium Web', sans-serif;
     --font-family: 'Roboto', sans-serif;
+    --font-family-main: Dalek;
 
     --title-font-size: 4rem;
     --title-2-font-size: 2.5rem;
@@ -34,13 +35,13 @@ body {
 h1 {
     font-size:  var(--title-font-size);
     color : var(--primary-color);
-    font-family : var(--title-font-family)
+    font-family : var(--font-family-main)
 }
 
 h2 {
     font-size:  var(--title-2-font-size);
     color : var(--primary-color);
-    font-family : var(--title-font-family)
+    font-family: var(--font-family-main);
 }
 
 

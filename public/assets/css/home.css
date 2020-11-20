@@ -8,6 +8,7 @@
 .text-acceuil{
     margin-bottom: 220px;
     margin-left: 50px;
+    font-family: var(--font-family-main);
 }
 @media screen and (max-width: 766px){
    .section{
