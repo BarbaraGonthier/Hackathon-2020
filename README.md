@@ -25,6 +25,7 @@ Back in Spartans time, we offer this training application allowing you to search
 1. Clone the repo from Github.
 2. Run `composer install`.
 3. Create a database and add tables according to this screenshot : 
+
 ![DTB screenshot](https://github.com/BarbaraGonthier/Hackathon-2020/blob/master/public/assets/images/DTB_hackathon.png)
 
 4. Create *config/db.php* from *config/db.php.dist* file and add your DB parameters. Don't delete the *.dist* file, it must be kept.
