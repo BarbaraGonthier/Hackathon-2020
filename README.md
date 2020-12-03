@@ -38,3 +38,18 @@ define('APP_DB_PWD', 'your_db_password');
 5. Run the internal PHP webserver with `php -S localhost:8000 -t public/`. The option `-t` with `public` as parameter means your localhost will target the `/public` folder.
 6. Go to `localhost:8000` with your favorite browser.
 7. From this starter kit, create your own web application.
+
+### Windows Users
+
+If you develop on Windows, you should edit your git configuration to change your end of line rules with this command :
+
+`git config --global core.autocrlf true`
+
+## URLs availables
+
+* Home page at [localhost:8000/](localhost:8000/)
+* Admin page at [localhost:8000/](localhost:8000/adminEquipment/index) and [localhost:8000/](localhost:8000/adminOrder/index)
+
+## How does URL routing work ?
+
+![Simple MVC.png](https://raw.githubusercontent.com/WildCodeSchool/simple-mvc/master/Simple%20-%20MVC.png)
