@@ -8,6 +8,14 @@ It uses some vendors/libraries such as Twig and Grumphp.
 
 Back in Spartans time, we offer this training application allowing you to search for exercices according to muscles you want to train, add exercices to your favorites, visit the equipment shop to request any missing one to your commander. It also includes an administration interface to handle the stocks equipment and the received orders (CRUD).
 
+![home](https://github.com/BarbaraGonthier/Hackathon-2020/blob/master/public/assets/images/home.jpeg)
+
+![exercices](https://github.com/BarbaraGonthier/Hackathon-2020/blob/master/public/assets/images/exercices.jpeg)
+
+![equipment](https://github.com/BarbaraGonthier/Hackathon-2020/blob/master/public/assets/images/equipment.jpeg)
+
+![admin](https://github.com/BarbaraGonthier/Hackathon-2020/blob/master/public/assets/images/admin.jpeg)
+
 
 ### Check on Travis
 
